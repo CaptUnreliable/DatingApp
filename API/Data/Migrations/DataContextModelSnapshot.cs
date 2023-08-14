@@ -22,6 +22,12 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<byte>("PasswordHash")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<byte>("PasswordSalt")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("UserName")
                         .HasColumnType("TEXT");
 
